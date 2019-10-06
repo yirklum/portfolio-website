@@ -1,0 +1,23 @@
+{
+  "name": "christinarust",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yirklum/christinarust.git"
+  },
+  "author": "Christina Rust",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yirklum/christinarust/issues"
+  },
+  "homepage": "https://github.com/yirklum/christinarust#readme",
+  "dependencies": {
+    "nodemon": "^1.19.0"
+  }
+}

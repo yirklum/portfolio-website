@@ -14,28 +14,100 @@
 
     <body>
         <header>
-            <!-- <p class="name">Christina Y. Rust</p> -->
-            <!-- <img src="graphics/Name 2.png"> -->
+            <img src="graphics/fsm-pancake-logo.png">
         </header>
 
-        <nav class="nav flex-column flex-sm-row">
-            <a class="flex-sm-fill text-sm-center nav-link active" href="index.html">Home</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="about.html">About</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="services.html">Services</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="portfolio.html">Portfolio</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="pricing.html">Pricing</a>
-            <!-- <a class="flex-sm-fill text-sm-center nav-link" href="contact.html">Contact</a> -->
+        <nav class="navbar navbar-expand-md navbar-light">                    
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                    
+            <div class="collapse navbar-collapse justify-content-center" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item" >
+                        <a class="nav-link font-weight-bold px-3" href="index.html">Home</a>
+                    </li>
+    
+                    <li class="nav-item" >
+                        <a class="nav-link font-weight-bold px-3" href="about.html">About</a>
+                    </li>
+                    
+                    <li class="nav-item" >
+                         <a class="nav-link font-weight-bold px-3" href="services.html">Services</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold px-3" href="client-reviews.html">Client Reviews</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold px-3" href="contact.html">Contact</a>
+                    </li>
+                </ul>                
+            </div>
         </nav>
 
+        <div class="banner-title">
+            <h1>About Full Stack Media Company</h1>
+        </div>
+    
+        <div class="services-description">
+            <img class="about-image" src="images/dc-at-twilight.jpg">
+                    
+            <div class="services-text">
+                <p>At its core, Full Stack Media is a web development company. We create custom websites for clients who want 
+                something unique. Rather than contorting your ideas to fit recycled templates from do-it-yourself website 
+                services, let us build your vision from scratch.
+                </p>
+
+                <p>Full Stack Media was created in response to customer demand for individualized, affordable, integrated 
+                website services. Our additional design, promotional and multimedia services 
+                were added after our clients repeatedly asked for help with all the tasks that typically go with building a 
+                website. Rather than try and coordinate a half a dozen entities (a web developer, a graphic designer, a 
+                publicist, a photographer, a copywriter, etc.), people desired 
+                a simpler solution. Full Stack Media provides customers with the convenience and affordability that comes 
+                with bundling all the services they need. We create completely customized, integrated products that reflect 
+                the particular needs of each client.
+                </p>
+
+                <p>Most of our customers are small businesses, nonprofits, or startups looking to establish themselves in 
+                their particular arena.  And while Full Stack Media offers a wide range of services, it still operates like 
+                a small business. This means each client receives one-on-one attention and prompt responses to any issues 
+                they may have. Our employees have experience working in the private and governmental sectors in a variety of 
+                fields, from web development and graphic design to public relations and media. 
+                </p>   
+
+                <p>Full Stack Media is based in Washington, D.C., but serves clients across the United States and abroad. 
+                Most of our services do not require in-person meetings (although they are recommended for local clients). 
+                Phone calls, e-mails and video-conferencing can easily facilitate back and forth communication. Contact us 
+                today by e-mail at info@fullstackmediacompany.com or through our <a href="contact.html">contact form</a> for 
+                a free consultation. Whether you’re a small business or individual looking to launch yourself or an 
+                established entity ready for an image makeover, we’re ready and able to work with you. Tell us what you have
+                in mind and we'll tell you how we can help! 
+                </p>
+            </div>
+        </div>
 
 
-
-
-
-
-
-        <footer>
-
+        <footer class="clear">
+            <div class="footer-text">
+                <div class="row">
+                    <div class="col-md-4 contact-info">
+                        Contact Us:
+                        <br>
+                        info@fullstackmediacompany.com
+                    </div>
+    
+                    <div class="col-md-3 copyright">
+                        &copy;2018 Full Stack Media
+                    </div>
+                
+                    <div class="col-md-5">
+                        <a href="terms-of-service.html"><p>Terms of Service</p></a>
+                        <a href="privacy-policy.html"><p>Privacy Policy</p></a>
+                    </div>
+                </div>
+            </div>
         </footer>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="   crossorigin="anonymous"></script>

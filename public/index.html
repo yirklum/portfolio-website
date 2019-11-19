@@ -3,51 +3,92 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Portfolio Homepage</title>
-        <meta name="Portfolio Homepage" content="">
+        <title>FSM Homepage</title>
+        <meta name="FSM Homepage" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Alice|Open+Sans|Prata|Quicksand|Sorts+Mill+Goudy&display=swap" rel="stylesheet">
         
     </head>
 
     <body>
         <header>
-            <!-- <p class="name">Christina Y. Rust</p> -->
-            <!-- <img src="graphics/Name 2.png"> -->
+            <img src="graphics/fsm-pancake-logo.png">
         </header>
 
-        <nav class="nav flex-column flex-sm-row">
-            <a class="flex-sm-fill text-sm-center nav-link active" href="index.html">Home</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="about.html">About</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="services.html">Services</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="portfolio.html">Portfolio</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="pricing.html">Pricing</a>
-            <!-- <a class="flex-sm-fill text-sm-center nav-link" href="contact.html">Contact</a> -->
+        <nav class="navbar navbar-expand-md navbar-light">                    
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                            
+            <div class="collapse navbar-collapse justify-content-center" id="nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item" >
+                        <a class="nav-link font-weight-bold px-3" href="index.html">Home</a>
+                    </li>
+            
+                    <li class="nav-item" >
+                        <a class="nav-link font-weight-bold px-3" href="about.html">About</a>
+                    </li>
+                            
+                    <li class="nav-item" >
+                        <a class="nav-link font-weight-bold px-3" href="services.html">Services</a>
+                    </li>
+                            
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold px-3" href="client-reviews.html">Client Reviews</a>
+                    </li>
+                            
+                    <li class="nav-item">
+                        <a class="nav-link font-weight-bold px-3" href="contact.html">Contact</a>
+                    </li>
+                </ul>                
+            </div>
         </nav>
 
 
-    <div class="intro">
-        <p class="intro-message">
-            Welcome to my website!
-            <br><br>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium obcaecati quibusdam ad quis adipisci 
-            eum sint, sequi enim quod dicta repellendus vero alias, vitae veniam, pariatur harum. Dolore, placeat at!
-        </p>
-    </div>
+        <div class="intro">
+            <div class="intro-message">
+                <p><strong>Welcome to Full Stack Media</strong></p>
 
+                <p>We are a one-stop shop for all of your web development needs. Our experienced professionals specialize in 
+                creating completely customized, beautiful websites. Full Stack Media offers a number of related services as 
+                well, including graphic design, content writing, multimedia production and branding and promotion. Please 
+                explore our site!
+                </p>
+            </div>
+        </div>
 
-    <div class="second-box">
-        <img src="graphics/services-flower-graphic.png">
-    </div>
+        <div class="banner-title">
+            <h1>Services We Offer</h1>
+        </div>
+
+        <div class="second-box">
+            <img src="graphics/services-flower-graphic.png">
+        </div>
 
        
+        <footer class="clear">
+            <div class="footer-text">
+                <div class="row">
+                    <div class="col-md-4 contact-info">
+                        Contact Us:
+                        <br>
+                        info@fullstackmediacompany.com
+                    </div>
 
-
-
-        <footer>
-
+                    <div class="col-md-3 copyright">
+                        &copy;2018 Full Stack Media
+                    </div>
+                
+                    <div class="col-md-5">
+                        <a href="terms-of-service.html"><p>Terms of Service</p></a>
+                        <a href="privacy-policy.html"><p>Privacy Policy</p></a>
+                    </div>
+                </div>
+            </div>
         </footer>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="   crossorigin="anonymous"></script>

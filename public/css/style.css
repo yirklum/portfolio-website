@@ -26,7 +26,7 @@
   /******************************************
   /* BASE STYLES
   /*******************************************/
-  
+
   body {
     margin: 0 auto;
     font-size: 18px;
@@ -34,6 +34,12 @@
     font-family: 'Sorts Mill Goudy', serif;
     width: 100%;
     height: 100%;
+  }
+
+  .wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
   }
   
   a {
@@ -83,10 +89,10 @@
 
   footer {
     background: #ffcc99;
-    padding: 55px 0px 25px 55px;
+    padding: 40px 0px 20px 75px;
     text-align: center;
     border-top: 2px solid orange;
-    margin-top: 25px;
+    margin-top: 50px;
   }
 
   footer a {
@@ -101,6 +107,8 @@
   background-repeat: no-repeat;
   height: 600px;
   border-bottom: solid 2px orange;
+  margin: 0;
+  position: relative;
 }
 
 .intro-message {
@@ -108,10 +116,11 @@
   position: absolute;
   opacity: 0.925;
   width: 50%;
-  height: 50%;
+  height: 60%;
   margin-left: 40%;
   margin-top: 9%;
   text-align: center;
+  text-overflow: hidden;
   border-radius: 8px;
   border: solid 2px #ffcc99;
   padding: 3%;
@@ -125,7 +134,7 @@
 
 /*Services*/
 
-#pancake-services-menu {
+#pancake-services-menu img {
   width: 100%;
 }
 
@@ -158,12 +167,15 @@
   margin-left: -20px;
   background-color: rgb(233,138,0,0.5);
   padding: 35px;
-  font-size: 16px;
 }
 
 .services-text-box {
   font-size: 18px;
   line-height: 2em;
+}
+
+.mobile-services-text-box {
+  display: none;
 }
 
 .second-box img {
@@ -240,11 +252,80 @@
 /*Contact*/
 
 .contact-form {
-  /* background-color: black; */
-  /* color: white; */
-  border-radius: 25px;
-  /* font-family: 'Playfair Display SC', serif; */
+  /* width: 100%; */
 }
+
+.form-container {
+  position: relative;
+  /* text-align: center; */
+}
+
+#notebook-image img {
+  width: 75%;
+  margin-left: 14%;
+}
+
+.form-content {
+  width: 50%;
+  /* margin-left: 17%;
+  padding-top: 20%; */
+  font-size: 18px;
+  z-index: 999;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-check {
+  margin-top: 10px;
+  /* margin-bottom: 10px; */
+}
+
+#submit {
+  background-color: #1d72b8;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  padding: 8px 15px;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+#submit img {
+  margin-left: 10px;
+  height: 35px;
+}
+
+.asterisk {
+  display: block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#name-label {
+  margin-left: -1%;
+  margin-bottom: 5px;
+}
+
+#title {
+  margin-left: -1%;
+}
+
+#phone-number {
+  margin-left: 5%;
+}
+
+/* #email {
+  margin-left: 1%;
+}
+
+#location {
+  margin-left: 1%;
+} */
 
 .contact-title {
   text-align: center;
@@ -255,15 +336,6 @@
 
 .contact-description {
   margin: 3% 0;
-}
-
-#submit {
-  background-color: orange;
-}
-
-.asterisk {
-  display: block;
-  margin-top: 25px;
 }
 
 /*Testimonials*/
@@ -292,7 +364,10 @@
   padding-bottom: 15px;
 }
 
-
+.graphic img {
+  width: 100%;
+  margin-top: 25px;
+}
 
 
 
@@ -317,52 +392,11 @@
   /* LAYOUT
   /*******************************************/
   
-  /* Header */
-  
-  /* header {
-    height: 150px;
-  } */
-
-  /* header img {
-    height: 100%;
-    margin-left: 5%;
-  } */
-
-  /* Navigation Menu */
-  
-  /* nav {
-    font-size: 22px;
-  } */
-
   .banner-title {
     padding-top: 5%;
     font-size: 36px;
   }
-
-
-  /*Footer*/
-
-  footer {
-    padding: 55px 0px 25px 55px;
-    margin-top: 25px;
-  }
   
-  /* Homepage */
-    
-  /* .intro {
-    background-image: url("../images/webpage-background.png");
-    height: 600px;
-  } */
-
-  /* .intro-message {
-    width: 50%;
-    height: 50%;
-    margin-left: 40%;
-    margin-top: 9%;
-    border-radius: 8px;
-    padding: 2%;
-  } */
-
   /*Services*/
 
   #pancake-services-menu {
@@ -438,21 +472,48 @@
 
   /*Contact*/
 
-  .contact-form {
-    width: 75%;
-    margin-left: 12%;
-    margin-top: 5%;
-    border-radius: 25px;
-    padding: 20px 0px;
+  /* .form-container {
+    position: relative;
+  } */
+  
+  #notebook-image img {
+    width: 80%;
+    margin-left: 10%;
   }
-
-  .asterisk {
+  
+  .form-content {
+    top: 12%;
+    left: 25%;
+  }
+  
+  /* .form-group {
+    margin-bottom: 25px;
+  } */
+  
+  /* .form-check {
+    margin-top: 10px; */
+    /* margin-bottom: 10px; */
+  
+  
+  /* #submit {
+    background-color: #1d72b8;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    padding: 8px 15px;
+    color: #ffffff;
+    font-size: 20px;
+  }
+  
+  #submit img {
+    margin-left: 10px;
+    height: 35px;
+  } */
+  
+  /* .asterisk {
+    display: block;
     margin-top: 25px;
-  }
-
-  #submit {
-    margin-top: 5px;
-  }
+    margin-bottom: 25px;
+  } */
 
   /*Testimonials*/
 
@@ -489,6 +550,7 @@
 
 @media (max-width: 1199px) {
   /* desktop view */
+  
   .services-list {
     margin: 0 auto;
     left: 0;
@@ -498,6 +560,53 @@
     font-size: 21px;
     line-height: 2em;
     font-weight: 800;
+  }
+
+  .text-box {
+    /* margin-left: -20px; */
+    padding: 4%;
+  }
+  
+  .services-text-box {
+    /* font-size: 18px; */
+    line-height: 1.6em;
+  }
+
+  .form-container {
+    position: relative;
+    /* text-align: center; */
+  }
+  
+  #notebook-image img {
+    width: 85%;
+    margin-left: 8%;
+  }
+  
+  .form-content {
+    width: 55%;
+    font-size: 16px;
+    top: 15%;
+    left: 23%;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-check {
+    margin-top: 10px;
+  }
+  
+  #submit {
+    margin-top: 35px;
+    margin-bottom: 25px;
+    padding: 8px 15px;
+    font-size: 20px;
+  }
+  
+  .asterisk {
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 }
 
@@ -512,9 +621,9 @@
   /* BASE STYLES
   /*******************************************/
   
-  body {
+  /* body {
     font-size: 18px;
-  }
+  } */
   
   /******************************************
   /* LAYOUT
@@ -542,47 +651,18 @@
     font-size: 36px;
   }
 
-
-  /*Footer*/
-
-  footer {
-    padding: 55px 0px 25px 55px;
-    margin-top: 25px;
-  }
-
-  .footer-text {
-      font-size: 18px;
-      padding-left: 5%;
-  }
-
-  .copyright {
-      padding-top: 35px;
-  }
-
-  .contact-info {
-      padding-top: 15px;
-  }
-  
   /* Homepage */
     
-  .intro {
-    background-image: url("../images/webpage-background.png");
-    height: 600px;
-  }
-
   .intro-message {
     width: 50%;
-    height: 400px;
-    margin-left: 40%;
-    margin-top: 9%;
-    border-radius: 8px;
-    padding: 2%;
+    height: 60%;
   }
 
   /*Services*/
 
   #pancake-services-menu {
     width: 100%;
+    padding-left: 3%;
   }
 
   .photo-box {
@@ -595,7 +675,7 @@
     /* margin: 0 auto;
     left: 0; */
     right: 24%;
-    top: 28%;
+    top: 26%;
     width: 70%;
     font-size: 20px;
     line-height: 2.1em;
@@ -654,28 +734,42 @@
 
   /*Contact*/
 
-  .contact-form {
-    width: 75%;
-    margin-left: 12%;
-    margin-top: 5%;
-    border-radius: 25px;
-    padding: 20px 0px;
+  /* .form-container {
+    position: relative;
+    /* text-align: center; */
+  /* } */ 
+  
+  #notebook-image img {
+    width: 95%;
+    margin-left: 3%;
   }
-
-  .asterisk {
-    margin-top: 25px;
+  
+  .form-content {
+    width: 60%;
+    /* font-size: 16px; */
+    top: 15%;
+    left: 20%;
   }
-
-  #submit {
-    margin-top: 5px;
+  
+  /* .form-group {
+    margin-bottom: 15px;
   }
-
-  #confirmation {
-    width: 48%;
-    margin-left: 23%;
-    height: 60%;
+   */
+  /* .form-check {
+    margin-top: 10px;
+  } */
+  
+  /* #submit {
+    margin-top: 35px;
+    margin-bottom: 25px;
+    padding: 8px 15px;
     font-size: 20px;
-  }
+  } */
+  
+  /* .asterisk {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  } */
 
   #popuptext {
     padding: 35px;
@@ -704,23 +798,115 @@
 
 @media (max-width: 992px) {
   /* desktop view */
+  
   .services-list {
     margin: 0 auto;
     left: 0;
     right: 23%;
-    top: 23%;
+    top: 29%;
     width: 70%;
-    font-size: 15px;
+    font-size: 18px;
+    line-height: 2.2em;
+    font-weight: 800;
+  }
+
+  .text-box {
+    /* margin-left: -20px; */
+    font-size: 16px;
+  }
+  
+  /* .services-text-box {
+    font-size: 18px;
+    line-height: 2em;
+  } */
+
+  #pancake-services-menu {
+    padding-left: 3%;
+  }
+}
+
+@media (max-width: 991px) {
+  /* desktop view */
+  
+  .services-list {
+    margin: 0 auto;
+    left: 0;
+    right: 20%;
+    top: 27%;
+    width: 70%;
+    font-size: 16px;
     line-height: 1.8em;
     font-weight: 800;
   }
 
-  nav a {
-    letter-spacing: 3px;
-    margin-right: 15px;
+  .text-box {
+    margin-left: -20px;
+    padding: 3%;
+  }
+  
+  .services-text-box {
+    font-size: 14px;
+    line-height: 1.5em;
+  }
+
+  #pancake-services-menu {
+    /* padding-left: 3%; */
   }
 }
 
+
+@media (max-width: 925px) {
+
+
+  /* #notebook-image img {
+    width: 95%;
+    margin-left: 3%;
+  }
+   */
+   .form-content {
+    width: 65%;
+    /* font-size: 14px; */
+    top: 10%;
+    left: 17%;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-check {
+    margin-top: 5px;
+  }
+  
+  #submit {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 8px 15px;
+    font-size: 18px;
+  }
+  
+  .asterisk {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  #email {
+    /* width: 50%; */
+    /* display: inline-block; */
+    /* float: left; */
+  }
+
+  #phone-number {
+    /* width: 45%; */
+    /* display: inline-block; */
+    /* float: left; */
+    margin-left: 5%;
+  }
+
+  #location {
+    /* display: block; */
+  }
+}
 
 @media (max-width: 768px) {
   /* tablet portrait */
@@ -729,9 +915,9 @@
   /* BASE STYLES
   /*******************************************/
   
-  body {
+  /* body {
     font-size: 18px;
-  }
+  } */
   
   /******************************************
   /* LAYOUT
@@ -767,22 +953,19 @@
 
   /*Footer*/
 
-  footer {
-    padding: 55px 0px 25px 55px;
-    margin-top: 25px;
-  }
-
   .footer-text {
       font-size: 18px;
-      padding-left: 5%;
-  } */
+      padding-right: 5%;
+  }
 
   .copyright {
-      padding-top: 35px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
   }
 
   .contact-info {
-      padding-top: 15px;
+      padding-top: 10px;
   }
   
   /* Homepage */
@@ -797,7 +980,6 @@
     height: 400px;
     margin-left: 40%;
     margin-top: 9%;
-    border-radius: 8px;
     padding: 2%;
   }
 
@@ -816,17 +998,17 @@
   .services-list {
     margin: 0 auto;
     left: 0;
-    right: 24%;
-    top: 23%;
+    right: 21%;
+    top: 29%;
     width: 70%;
     font-size: 15px;
-    line-height: 1.8em;
+    line-height: 1.7em;
     font-weight: 800;
   }
 
   .text-box {
     margin-left: -20px;
-    padding: 35px;
+    /* padding: 35px; */
     font-size: 16px;
   }
 
@@ -876,32 +1058,37 @@
 
   /*Contact*/
 
-  .contact-form {
-    width: 75%;
-    margin-left: 12%;
-    margin-top: 5%;
-    border-radius: 25px;
-    padding: 20px 0px;
+  #notebook-image img {
+    width: 95%;
+    margin-left: 3%;
   }
-
-  .asterisk {
-    margin-top: 25px;
+/*   
+   .form-content {
+    width: 65%;
+    font-size: 14px;
+    top: 10%;
+    left: 17%;
   }
-
-  #submit {
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-check {
     margin-top: 5px;
   }
-
-  #last-name {
-    margin-top: 0px;
-}
-
-  #confirmation {
-    width: 48%;
-    margin-left: 23%;
-    height: 60%;
-    font-size: 20px;
+  
+  #submit {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 8px 15px;
+    font-size: 18px;
   }
+  
+  .asterisk {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  } */
 
   #popuptext {
     padding: 35px;
@@ -928,17 +1115,100 @@
   }
 }
 
-@media (max-width: 766px) {
+@media (max-width: 767px) {
   /* desktop view */
+  
   .services-list {
     margin: 0 auto;
-    left: 0;
-    right: 23%;
-    top: 12.5%;
-    width: 70%;
-    font-size: 11px;
-    line-height: 1.5em;
+    left: 25%;
+    top: 28.75%;
+    width: 75%;
+    font-size: 18px;
+    line-height: 2em;
     font-weight: 800;
+  }
+  
+  .services-text-box {
+    font-size: 11px;
+  }
+
+  .text-box {
+    display: none;
+  }
+
+  .mobile-services-text-box {
+    display: block;
+    width: 85%;
+    margin-left: 8%;
+    margin-top: 4%;
+  }
+
+  #pancake-services-menu img {
+    width: 170%;
+  }
+
+  /*About*/
+
+  #notebook-image img {
+    width: 100%;
+    margin-left: 0%;
+  }
+ 
+  .form-content {
+    width: 70%;
+    /* font-size: 14px; */
+    top: 10%;
+    left: 15%;
+  }
+
+  form hr {
+    display: none;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-check {
+    margin-top: 5px;
+  }
+  
+  #submit {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+  }
+
+  #submit img {
+    height: 20px;
+  }
+  
+  .asterisk {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  #title {
+    max-width: 18%;
+    /* display: inline-block;
+    float: left; */
+  }
+
+  #first-name {
+    max-width: 35%;
+    /* display: inline-block;
+    float: left; */
+  }
+
+  #last-name {
+    max-width: 45%;
+    /* display: inline-block;
+    float: left; */
+  }
+
+  ::placeholder {
+    /* font-size: 14px; */
   }
 }
 
@@ -954,7 +1224,7 @@
   /*******************************************/
   
   body {
-    font-size: 18px;
+    font-size: 16px;
   }
   
   /******************************************
@@ -986,17 +1256,8 @@
   /*Footer*/
 
   footer {
-    padding: 55px 0px 25px 55px;
-    margin-top: 25px;
+    padding-right: 6%;
     font-size: 16px;
-  }
-
-  .copyright {
-    padding-top: 35px;
-  }
-
-  .contact-info {
-    padding-top: 15px;
   }
   
   /* Homepage */
@@ -1008,18 +1269,13 @@
 
   .intro-message {
     width: 50%;
-    height: 50%;
+    height: 75%;
     margin-left: 40%;
     margin-top: 9%;
-    border-radius: 8px;
-    padding: 2%;
+    padding: 4% 2% 0 2%;
   }
 
   /*Services*/
-
-  #pancake-services-menu {
-    width: 100%;
-  }
 
   .photo-box {
     margin-left: -20px;
@@ -1027,16 +1283,15 @@
     display: inline-block;
   }
 
-  .services-list {
+  /* .services-list {
     margin: 0 auto;
-    left: 0;
-    right: 24%;
-    top: 12.5%;
-    width: 70%;
-    font-size: 11px;
-    line-height: 1.5em;
+    left: 25%;
+    top: 28.75%;
+    width: 75%;
+    font-size: 18px;
+    line-height: 2em;
     font-weight: 800;
-  }
+  } */
 
   .text-box {
     margin-left: -20px;
@@ -1090,26 +1345,87 @@
 
   /*Contact*/
 
-  .contact-form {
+  #notebook-image img {
+    display: none;
+  }
+ 
+  .form-container {
     width: 90%;
-    margin-left: 4%;
-    margin-top: 5%;
-    /* border-radius: 25px; */
-    padding: 20px 0px;
-    /* font-size: 18px; */
-}
+    /* font-size: 12px; */
+    /* top: 10%; */
+    /* left: 10%; */
+    margin-left: 5%;
+    background: rgb(187, 191, 192);
+    height: 1000px;
+    border-radius: 8px;
 
-  .asterisk {
-    margin-top: 25px;
   }
 
+  .form-content {
+    width: 85%;
+    left: 7%;
+    /* margin-left: -2%; */
+    top: 5%;
+  }
+
+  form hr {
+    display: block;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-check {
+    margin-top: 10px;
+  }
+  
   #submit {
-    margin-top: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    font-size: 18px;
   }
 
-  /* #last-name {
-    margin-top: 0px;
-} */
+  #submit img {
+    height: 25px;
+  }
+  
+  .asterisk {
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+
+  #title {
+    max-width: 20%;
+    /* display: inline-block;
+    float: left; */
+  }
+
+  #first-name {
+    /* max-width: 35%; */
+    /* display: inline-block;
+    float: left; */
+  }
+
+  #last-name {
+    /* max-width: 45%; */
+    /* display: inline-block;
+    float: left; */
+  }
+
+  #email {
+    /* width: 55%; */
+  }
+
+  #phone-number {
+    /* width: 40%; */
+  }
+
+  ::placeholder {
+    /* font-size: 12px; */
+  }
+
 
   #confirmation {
     width: 48%;
@@ -1146,16 +1462,142 @@
 
 @media (max-width: 575px) {
   /* desktop view */
+  
+  #pancake-services-menu {
+    margin-left: 10%;
+  }
+
+  #pancake-services-menu img {
+    /* display: block; */
+    width: 140%;
+    opacity: 0.4;
+  }
+
+  .text-box {
+    margin-left: -20px;
+    background-color: #ffcc99;
+    padding: 3%;
+    /* font-size: 16px; */
+  }
+  
+  .services-text-box {
+    font-size: 13px;
+    line-height: 1.5em;
+    height: 300px;
+  }
+
+  .services-image {
+    width: 50%;
+    float: right;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+
+  .services-description {
+    margin: 3% 9%;
+  }
+
   .services-list {
     margin: 0 auto;
-    left: 0;
-    right: 23%;
-    top: 13.5%;
-    width: 70%;
-    font-size: 12px;
-    line-height: 1.5em;
+    left: 35%;
+    top: 12%;
+    width: 75%;
+    font-size: 16px;
+    line-height: 1.9em;
     font-weight: 800;
   }
+
+  .intro-message {
+    width: 55%;
+    height: 80%;
+    margin-left: 30%;
+    margin-top: 15%;
+    /* border-radius: 8px; */
+    /* padding: 2%; */
+  }
+
+  /* #notebook-image img {
+    width: 100%;
+    margin-left: 0%;
+  } */
+ 
+  .form-container {
+    height: 1250px;
+    width: 75%;
+    margin-left: 12%;
+  }
+
+  .form-content {
+    top: 3%;
+  }
+
+  /* form hr {
+    display: none;
+  } */
+  
+  /* .form-group {
+    margin-bottom: 10px;
+  } */
+  
+  /* .form-check {
+    margin-top: 0px;
+  } */
+  
+  /* #submit {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+  } */
+
+  /* #submit img {
+    height: 15px;
+  }
+  
+  .asterisk {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  } */
+
+  #title {
+    max-width: 100%;
+    /* margin-right: 50%; */
+    /* display: block;
+    float: left; */ */
+  }
+
+  #first-name {
+    max-width: 100%;
+    margin-left: -1%;
+    /* margin-right: 40%; */
+    /* display: inline-block;
+    float: left; */
+  }
+
+  #last-name {
+    max-width: 100%;
+    margin-left: -1%;
+    /* margin-right: 40%; */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* display: inline-block;
+    float: left; */
+  }
+
+  #email {
+    max-width: 100%;
+    /* margin-right: 40%; */
+  }
+
+  #phone-number {
+    max-width: 100%;
+    margin-left: 0px;
+  }
+  /* ::placeholder {
+    font-size: 12px;
+  } */
+
 }
 
 
@@ -1167,7 +1609,7 @@
   /*******************************************/
   
   body {
-    font-size: 18px;
+    font-size: 14px;
   }
   
   /******************************************
@@ -1177,7 +1619,7 @@
   /* Header */
   
   header {
-    height: 150px;
+    height: 100px;
   }
 
   header img {
@@ -1199,19 +1641,9 @@
   /*Footer*/
 
   footer {
-    padding: 55px 0px 25px 55px;
-    margin-top: 25px;
     font-size: 16px;
   }
 
-  .copyright {
-    padding-top: 35px;
-  }
-
-  .contact-info {
-    padding-top: 15px;
-  }
-  
   /* Homepage */
     
   .intro {
@@ -1220,18 +1652,18 @@
   }
 
   .intro-message {
-    width: 50%;
-    height: 50%;
-    margin-left: 40%;
-    margin-top: 9%;
-    border-radius: 8px;
-    padding: 2%;
+    width: 70%;
+    height: 60%;
+    margin-left: 15%;
+    margin-top: 15%;
+    padding-top: 8%;
+    /* padding: 2%; */
   }
 
   /*Services*/
 
-  #pancake-services-menu {
-    width: 100%;
+  #pancake-services-menu img {
+    opacity: 0.3;
   }
 
   .photo-box {
@@ -1242,12 +1674,11 @@
 
   .services-list {
     margin: 0 auto;
-    left: 0;
-    right: 24%;
-    top: 28%;
-    width: 70%;
-    font-size: 25px;
-    line-height: 2.2em;
+    left: 25%;
+    top: 12%;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.1em;
     font-weight: 800;
   }
 
@@ -1303,24 +1734,15 @@
 
   /*Contact*/
 
-  .contact-form {
-    width: 90%;
-    margin-left: 4%;
-    margin-top: 5%;
-    padding: 20px 0px;
+  .form-container {
+    height: 1400px;
   }
 
-  .asterisk {
-    margin-top: 25px;
+  .form-content {
+    top: 2%;
   }
 
-  #submit {
-    margin-top: 5px;
-  }
-
-  /* #last-name {
-    margin-top: 0px;
-} */
+  
 
   #confirmation {
     width: 48%;
@@ -1374,6 +1796,16 @@
     }
 }
 
+@media(max-width: 320px) {
+    
+  .intro-message {
+    width: 80%;
+    height: 70%;
+    margin-left: 10%;
+    margin-top: 15%;
+    padding-top: 8%;
+  }
+}
 
 @media(max-width: 320px) {
   /* small portrait screens */
@@ -1383,7 +1815,7 @@
   /*******************************************/
   
   body {
-    font-size: 18px;
+    /* font-size: 18px; */
   }
   
   /******************************************
@@ -1393,7 +1825,7 @@
   /* Header */
   
   header {
-    height: 150px;
+    height: 100px;
   }
 
   header img {
@@ -1412,21 +1844,6 @@
     font-size: 24px;
   }
 
-  /*Footer*/
-
-  footer {
-    padding: 55px 0px 25px 55px;
-    margin-top: 25px;
-    font-size: 16px;
-  }
-
-  .copyright {
-    padding-top: 35px;
-  }
-
-  .contact-info {
-    padding-top: 15px;
-  }
   
   /* Homepage */
     
@@ -1435,15 +1852,18 @@
     height: 600px;
   }
 
+
+  
   .intro-message {
-    width: 50%;
-    height: 50%;
-    margin-left: 40%;
-    margin-top: 9%;
-    border-radius: 8px;
-    padding: 2%;
-    font-size: 14px;
+    width: 80%;
+    height: 70%;
+    margin-left: 10%;
+    margin-top: 15%;
+    padding-top: 8%;
+    /* border-radius: 8px; */
+    /* padding: 2%; */
   }
+
 
   /*Services*/
 
@@ -1459,12 +1879,11 @@
 
   .services-list {
     margin: 0 auto;
-    left: 0;
-    right: 24%;
-    top: 28%;
-    width: 70%;
-    font-size: 25px;
-    line-height: 2.2em;
+    left: 25%;
+    top: 10%;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1em;
     font-weight: 800;
   }
 

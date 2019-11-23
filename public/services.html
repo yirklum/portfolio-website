@@ -14,50 +14,52 @@
     </head>
 
     <body>
-        <header>
-            <img src="graphics/fsm-pancake-logo.png">
-        </header>
+        <div class="wrapper">
+            <header>
+                <img src="graphics/fsm-pancake-logo.png">
+            </header>
 
-        <nav class="navbar navbar-expand-md navbar-light">                    
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-                        
-            <div class="collapse navbar-collapse justify-content-center" id="nav">
-                <ul class="navbar-nav">
-                    <li class="nav-item" >
-                        <a class="nav-link font-weight-bold px-3" href="index.html">Home</a>
-                    </li>
-        
-                    <li class="nav-item" >
-                        <a class="nav-link font-weight-bold px-3" href="about.html">About</a>
-                    </li>
-                        
-                    <li class="nav-item" >
-                         <a class="nav-link font-weight-bold px-3" href="services.html">Services</a>
-                    </li>
-                        
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold px-3" href="client-reviews.html">Client Reviews</a>
-                    </li>
-                        
-                    <li class="nav-item">
-                        <a class="nav-link font-weight-bold px-3" href="contact.html">Contact</a>
-                    </li>
-                </ul>                
-            </div>
-        </nav>
-        
-        <div class="services-page">
-            <h1 class="banner-title">A Full Stack of Services</h1>
-            
-            <div class="container">
-                <div class="row">
-                    <div class="col-8 photo-box">
-
+            <nav class="navbar navbar-expand-md navbar-light">                    
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                             
-                        <img src="images/blank-pancake.png" usemap="#services" id="pancake-services-menu">
+                <div class="collapse navbar-collapse justify-content-center" id="nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item" >
+                            <a class="nav-link font-weight-bold px-3" href="index.html">Home</a>
+                        </li>
+            
+                        <li class="nav-item" >
+                            <a class="nav-link font-weight-bold px-3" href="about.html">About</a>
+                        </li>
+                            
+                        <li class="nav-item" >
+                            <a class="nav-link font-weight-bold px-3" href="services.html">Services</a>
+                        </li>
+                            
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold px-3" href="client-reviews.html">Client Reviews</a>
+                        </li>
+                            
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold px-3" href="contact.html">Contact</a>
+                        </li>
+                    </ul>                
+                </div>
+            </nav>
+            
+            <div class="services-page">
+                <h1 class="banner-title">A Full Stack of Services</h1>
+                
+                <div class="container" id="service-section">
+                    <div class="row">
+                        <div class="col-8 photo-box">
 
+                            <div id="pancake-services-menu">
+                                <img src="images/blank-pancake.png">
+                            </div>
+                                
                             <div class="services-list">
                                 <p><a href="website-development.html">WEBSITE DEVELOPMENT</a></p>
                                 <p><a href="graphic-design.html">GRAPHIC DESIGN</a></p>
@@ -65,49 +67,57 @@
                                 <p><a href="multimedia-production.html">MULTIMEDIA PRODUCTION</a></p>
                                 <p><a href="content-writing.html">CONTENT WRITING</a></p>
                             </div>
-                    </div>
+                        </div>
 
-                    <div class="col-4 text-box">
-                        <p class="services-text-box">Full Stack Media offers a wide range of related services. While we are primarily a website 
-                            development company, we offer other services that compliment our central work. Click on each
-                            service listed to the left to learn more. For general pricing information, scroll down the page.
-                        </p>
+                        <div class="col-4 text-box">
+                            <p class="services-text-box">Full Stack Media offers a wide range of related services. While we are primarily 
+                                a website development company, we offer other services that compliment our central work. Click on each
+                                service listed to the left to learn more. For general pricing information, check out the section below.
+                            </p>
+                        </div>
                     </div>
+                </div>
+
+                <div class="mobile-services-text-box">
+                    Full Stack Media offers a wide range of related services. While we are primarily a website development company, 
+                    we offer other services that compliment our central work. Click on each service listed above to learn more. 
+                    For general pricing information, check out the section below.
+                    <hr>
+                </div>
+
+                <div class="banner-title">Our Pricing Plans</div>
+
+                <div class="services-description">Our pricing depends on the particular services our clients choose to utilize.
+                    For a specific quote, please <a href="contact.html">contact Full Stack Media</a> and let us know more about your 
+                    needs. For a general idea of our pricing structure, here are some of our common packages:</div>
+        
+        
+                <div class="pricing">
+                    <img src="graphics/Pricing.png">
                 </div>
             </div>
 
-            <div class="banner-title">Our Pricing Plans</div>
-
-            <div class="services-description">Our pricing depends on the particular services our clients choose to utilize.
-                For a specific quote, please <a href="contact">contact Full Stack Media</a> and let us know more about your 
-                needs. For a general idea of our pricing structure, here are some of our common packages:</div>
-    
-    
-            <div class="pricing">
-                <img src="graphics/Pricing.png">
-            </div>
-        </div>
-
-        <footer class="clear">
-            <div class="footer-text">
-                <div class="row">
-                    <div class="col-md-4 contact-info">
-                        Contact Us:
-                        <br>
-                        info@fullstackmediacompany.com
-                    </div>
-    
-                    <div class="col-md-3 copyright">
-                        &copy;2018 Full Stack Media
-                    </div>
-                
-                    <div class="col-md-5">
-                        <a href="terms-of-service.html"><p>Terms of Service</p></a>
-                        <a href="privacy-policy.html"><p>Privacy Policy</p></a>
+            <footer class="clear">
+                <div class="footer-text">
+                    <div class="row">
+                        <div class="col-md-4 contact-info">
+                            Contact Us:
+                            <br>
+                            info@fullstackmediacompany.com
+                        </div>
+        
+                        <div class="col-md-3 copyright">
+                            &copy;2018 Full Stack Media
+                        </div>
+                    
+                        <div class="col-md-5">
+                            <a href="terms-of-service.html"><p>Terms of Service</p></a>
+                            <a href="privacy-policy.html"><p>Privacy Policy</p></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
+            </footer>
+        </div>    
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="   crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>

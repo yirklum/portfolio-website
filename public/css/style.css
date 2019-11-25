@@ -84,7 +84,6 @@
     font-size: 36px;
   }
 
-
   /*Footer*/
 
   footer {
@@ -131,6 +130,9 @@
   background: lightblue;
 }
 
+.second-box-mobile {
+  display: none;
+}
 
 /*Services*/
 
@@ -187,6 +189,14 @@
   margin-left: 2%;
 }
 
+.tablet-pricing img {
+  display: none;
+}
+
+.mobile-pricing img {
+  display: none;
+}
+
 .services-image {
   width: 50%;
   float: right;
@@ -223,13 +233,11 @@
   color: orange;
 }
 
-
 /*Website Development*/
 
 .wb-text {
   margin: 3% 7%;
 }
-
 
 /*Terms of Service/Privacy Policy*/
 
@@ -248,16 +256,10 @@
   text-decoration: underline;
 }
 
-
 /*Contact*/
-
-.contact-form {
-  /* width: 100%; */
-}
 
 .form-container {
   position: relative;
-  /* text-align: center; */
 }
 
 #notebook-image img {
@@ -267,14 +269,11 @@
 
 .form-content {
   width: 50%;
-  /* margin-left: 17%;
-  padding-top: 20%; */
   font-size: 18px;
   z-index: 999;
   position: absolute;
   top: 15%;
   left: 25%;
-
 }
 
 .form-group {
@@ -283,7 +282,6 @@
 
 .form-check {
   margin-top: 10px;
-  /* margin-bottom: 10px; */
 }
 
 #submit {
@@ -319,17 +317,8 @@
   margin-left: 5%;
 }
 
-/* #email {
-  margin-left: 1%;
-}
-
-#location {
-  margin-left: 1%;
-} */
-
 .contact-title {
   text-align: center;
-  /* padding-top: 5%; */
   font-family: 'Sorts Mill Goudy', serif;
   font-size: 36px;
 }
@@ -338,7 +327,7 @@
   margin: 3% 0;
 }
 
-/*Testimonials*/
+/*Reviews*/
 
 .screenshot img {
   width: 100%;
@@ -351,7 +340,10 @@
 
 .review {
   margin-top: 25px;
-  /* background: lightgrey; */
+}
+
+.review-block-mobile {
+  display: none;
 }
 
 /*About*/
@@ -364,96 +356,39 @@
   padding-bottom: 15px;
 }
 
-.graphic img {
+.philosophy img {
   width: 100%;
   margin-top: 25px;
 }
 
-
+.philosophy-mobile img {
+  display: none;
+}
 
 /*Smaller Screen Sizes*/
-
 
 /* Desktops/Laptops */
 
 @media (max-width: 1280px) {
   /* desktop view */
-
-
-  /******************************************
-  /* BASE STYLES
-  /*******************************************/
-  
-  /* body {
-    font-size: 18px;
-  } */
   
   /******************************************
   /* LAYOUT
   /*******************************************/
-  
-  .banner-title {
-    padding-top: 5%;
-    font-size: 36px;
-  }
-  
+
   /*Services*/
 
   #pancake-services-menu {
     width: 100%;
   }
 
-  .photo-box {
-    margin-left: -20px;
-    position: relative;
-    display: inline-block;
-  }
-
   .services-list {
-    margin: 0 auto;
-    left: 0;
-    right: 24%;
-    top: 28%;
-    width: 70%;
     font-size: 23px;
     line-height: 2.4em;
-    font-weight: 800;
   }
 
   .text-box {
-    margin-left: -20px;
-    padding: 35px;
     font-size: 16px;
-  }
-
-  .second-box img {
-    width: 100%;
-  }
-
-  .pricing img {
-    width: 95%;
-  }
-
-  .services-image {
-    width: 50%;
-    float: right;
-    padding-left: 25px;
-    padding-top: 25px;
-    padding-bottom: 15px;
-  }
-
-  .services-description {
-    margin: 3% 9%;
-  }
-
-  .services-text ul li {
-    padding-top: 15px;
-    margin-left: 2%;
-  }
-
-  .small-title {
-    margin-right: 5px;
-    font-size: 22px;
   }
 
   /*Terms of Service/Privacy Policy*/
@@ -471,10 +406,6 @@
   }
 
   /*Contact*/
-
-  /* .form-container {
-    position: relative;
-  } */
   
   #notebook-image img {
     width: 80%;
@@ -484,50 +415,6 @@
   .form-content {
     top: 12%;
     left: 25%;
-  }
-  
-  /* .form-group {
-    margin-bottom: 25px;
-  } */
-  
-  /* .form-check {
-    margin-top: 10px; */
-    /* margin-bottom: 10px; */
-  
-  
-  /* #submit {
-    background-color: #1d72b8;
-    margin-top: 35px;
-    margin-bottom: 25px;
-    padding: 8px 15px;
-    color: #ffffff;
-    font-size: 20px;
-  }
-  
-  #submit img {
-    margin-left: 10px;
-    height: 35px;
-  } */
-  
-  /* .asterisk {
-    display: block;
-    margin-top: 25px;
-    margin-bottom: 25px;
-  } */
-
-  /*Testimonials*/
-
-  .screenshot img {
-    width: 100%;
-    margin-top: 25px;
-  }
-
-  .testimonial img {
-    width: 100%;
-  }
-
-  .review {
-    margin-top: 25px;
   }
 
   #confirmation {
@@ -545,36 +432,43 @@
     margin: 35px;
     font-size: 18px;
   }
-}
 
+  /*Reviews*/
+
+  .screenshot img {
+    width: 100%;
+    margin-top: 25px;
+  }
+
+  .testimonial img {
+    width: 100%;
+  }
+
+  .review {
+    margin-top: 25px;
+  }
+}
 
 @media (max-width: 1199px) {
   /* desktop view */
   
   .services-list {
-    margin: 0 auto;
-    left: 0;
-    right: 24%;
-    top: 28%;
-    width: 70%;
     font-size: 21px;
     line-height: 2em;
-    font-weight: 800;
   }
 
   .text-box {
-    /* margin-left: -20px; */
     padding: 4%;
   }
   
   .services-text-box {
-    /* font-size: 18px; */
     line-height: 1.6em;
   }
 
+  /*Contact*/
+
   .form-container {
     position: relative;
-    /* text-align: center; */
   }
   
   #notebook-image img {
@@ -610,46 +504,14 @@
   }
 }
 
-
 /* Tablets */
 
 @media(max-width: 1024px) {
   /* tablet landscape */
 
-
-    /******************************************
-  /* BASE STYLES
-  /*******************************************/
-  
-  /* body {
-    font-size: 18px;
-  } */
-  
   /******************************************
   /* LAYOUT
   /*******************************************/
-  
-  /* Header */
-  
-  header {
-    height: 150px;
-  }
-
-  header img {
-    height: 100%;
-    margin-left: 5%;
-  }
-
-  /* Navigation Menu */
-  
-  nav {
-    font-size: 22px;
-  }
-
-  .banner-title {
-    padding-top: 5%;
-    font-size: 36px;
-  }
 
   /* Homepage */
     
@@ -658,64 +520,25 @@
     height: 60%;
   }
 
+  .second-box {
+    width: 100%;
+    margin: 1%;
+  }
+
   /*Services*/
 
   #pancake-services-menu {
-    width: 100%;
     padding-left: 3%;
   }
 
-  .photo-box {
-    margin-left: -20px;
-    position: relative;
-    display: inline-block;
-  }
-
   .services-list {
-    /* margin: 0 auto;
-    left: 0; */
-    right: 24%;
     top: 26%;
-    width: 70%;
     font-size: 20px;
     line-height: 2.1em;
-    font-weight: 800;
   }
 
   .text-box {
-    margin-left: -20px;
-    padding: 35px;
     font-size: 16px;
-  }
-
-  .second-box img {
-    width: 100%;
-  }
-
-  .pricing img {
-    width: 95%;
-  }
-
-  .services-image {
-    width: 50%;
-    float: right;
-    padding-left: 25px;
-    padding-top: 25px;
-    padding-bottom: 15px;
-  }
-
-  .services-description {
-    margin: 3% 9%;
-  }
-
-  .services-text ul li {
-    padding-top: 15px;
-    margin-left: 2%;
-  }
-
-  .small-title {
-    margin-right: 5px;
-    font-size: 22px;
   }
 
   /*Terms of Service/Privacy Policy*/
@@ -733,11 +556,6 @@
   }
 
   /*Contact*/
-
-  /* .form-container {
-    position: relative;
-    /* text-align: center; */
-  /* } */ 
   
   #notebook-image img {
     width: 95%;
@@ -746,30 +564,9 @@
   
   .form-content {
     width: 60%;
-    /* font-size: 16px; */
     top: 15%;
     left: 20%;
   }
-  
-  /* .form-group {
-    margin-bottom: 15px;
-  }
-   */
-  /* .form-check {
-    margin-top: 10px;
-  } */
-  
-  /* #submit {
-    margin-top: 35px;
-    margin-bottom: 25px;
-    padding: 8px 15px;
-    font-size: 20px;
-  } */
-  
-  /* .asterisk {
-    margin-top: 15px;
-    margin-bottom: 15px;
-  } */
 
   #popuptext {
     padding: 35px;
@@ -780,7 +577,7 @@
     font-size: 18px;
   }
 
-  /*Testimonials*/
+  /*Reviews*/
 
   .screenshot img {
     width: 100%;
@@ -800,72 +597,89 @@
   /* desktop view */
   
   .services-list {
-    margin: 0 auto;
-    left: 0;
     right: 23%;
-    top: 29%;
-    width: 70%;
-    font-size: 18px;
+    top: 28%;
+    font-size: 19px;
     line-height: 2.2em;
-    font-weight: 800;
   }
 
-  .text-box {
-    /* margin-left: -20px; */
-    font-size: 16px;
+  .services-text-box {
+    font-size: 18px;
   }
   
-  /* .services-text-box {
-    font-size: 18px;
-    line-height: 2em;
-  } */
-
   #pancake-services-menu {
     padding-left: 3%;
+  }
+
+  .pricing img {
+    width: 95%;
+    padding: 0px;
   }
 }
 
 @media (max-width: 991px) {
   /* desktop view */
   
+  /*Services*/
+
   .services-list {
-    margin: 0 auto;
-    left: 0;
     right: 20%;
     top: 27%;
-    width: 70%;
     font-size: 16px;
-    line-height: 1.8em;
-    font-weight: 800;
+    line-height: 1.7em;
   }
 
   .text-box {
-    margin-left: -20px;
     padding: 3%;
   }
   
   .services-text-box {
-    font-size: 14px;
-    line-height: 1.5em;
+    font-size: 16px;
+    line-height: 1.2em;
   }
 
-  #pancake-services-menu {
-    /* padding-left: 3%; */
+  /*Reviews*/
+  
+  .review-block {
+    display: none;
+  }
+
+  .review-block-mobile {
+    display: block;
+  }
+
+  /* .screenshot img {
+    width: 100%;
+    margin-top: 25px;
+  }
+  
+  .testimonial img {
+    width: 100%;
+  }
+  
+  .review {
+    margin-top: 25px;
+  } */
+
+  .review-mobile img {
+    width: 45%;
+    margin-left: 28%;
+    margin-bottom: 3%;
+  }
+
+  .screenshot-mobile img {
+    width: 75%;
+    margin-left: 12%;
+    margin-bottom: 3%;
   }
 }
 
-
 @media (max-width: 925px) {
 
+  /*Contact*/
 
-  /* #notebook-image img {
-    width: 95%;
-    margin-left: 3%;
-  }
-   */
-   .form-content {
+  .form-content {
     width: 65%;
-    /* font-size: 14px; */
     top: 10%;
     left: 17%;
   }
@@ -890,66 +704,38 @@
     margin-bottom: 5px;
   }
 
-  #email {
-    /* width: 50%; */
-    /* display: inline-block; */
-    /* float: left; */
-  }
-
   #phone-number {
-    /* width: 45%; */
-    /* display: inline-block; */
-    /* float: left; */
     margin-left: 5%;
   }
 
-  #location {
-    /* display: block; */
+  .pricing img {
+    display: none;;
+  }
+
+  /*Services*/
+
+  .tablet-pricing img {
+    display: block;
+    width: 82%;
+    margin: 15px auto;
+    background-color: rgb(247, 247, 247);
+    border-radius: 16px;
+    padding: 30px;
   }
 }
 
 @media (max-width: 768px) {
   /* tablet portrait */
 
-      /******************************************
-  /* BASE STYLES
-  /*******************************************/
-  
-  /* body {
-    font-size: 18px;
-  } */
-  
   /******************************************
   /* LAYOUT
   /*******************************************/
-  
-  /* Header */
-  
-  header {
-    height: 150px;
-  }
-
-  header img {
-    height: 100%;
-    margin-left: 5%;
-  }
 
   /* Navigation Menu */
-  
-  nav {
-    font-size: 22px;
-  }
 
   nav a {
-    letter-spacing: 3px;
     margin-right: 5px;
   }
-
-  .banner-title {
-    padding-top: 5%;
-    font-size: 36px;
-  }
-
 
   /*Footer*/
 
@@ -961,7 +747,6 @@
   .copyright {
       padding-top: 15px;
       padding-bottom: 15px;
-
   }
 
   .contact-info {
@@ -983,63 +768,32 @@
     padding: 2%;
   }
 
-  /*Services*/
+  .second-box {
+    display: none;
+  }
 
-  #pancake-services-menu {
+  .second-box-mobile {
+    width: 80%;
+    display: block;
+    background-color: rgb(247, 247, 247);
+    border-radius: 16px;
+    padding: 35px 75px;
+    margin: 15px auto;
+  }
+
+  .second-box-mobile img {
     width: 100%;
   }
 
-  .photo-box {
-    margin-left: -20px;
-    position: relative;
-    display: inline-block;
-  }
+  /*Services*/
 
   .services-list {
-    margin: 0 auto;
-    left: 0;
-    right: 21%;
-    top: 29%;
-    width: 70%;
-    font-size: 15px;
-    line-height: 1.7em;
-    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.65em;
   }
 
   .text-box {
-    margin-left: -20px;
-    /* padding: 35px; */
     font-size: 16px;
-  }
-
-  .second-box img {
-    width: 100%;
-  }
-
-  .pricing img {
-    width: 95%;
-  }
-
-  .services-image {
-    width: 50%;
-    float: right;
-    padding-left: 25px;
-    padding-top: 25px;
-    padding-bottom: 15px;
-  }
-
-  .services-description {
-    margin: 3% 9%;
-  }
-
-  .services-text ul li {
-    padding-top: 15px;
-    margin-left: 2%;
-  }
-
-  .small-title {
-    margin-right: 5px;
-    font-size: 22px;
   }
 
   /*Terms of Service/Privacy Policy*/
@@ -1062,33 +816,6 @@
     width: 95%;
     margin-left: 3%;
   }
-/*   
-   .form-content {
-    width: 65%;
-    font-size: 14px;
-    top: 10%;
-    left: 17%;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .form-check {
-    margin-top: 5px;
-  }
-  
-  #submit {
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding: 8px 15px;
-    font-size: 18px;
-  }
-  
-  .asterisk {
-    margin-top: 10px;
-    margin-bottom: 5px;
-  } */
 
   #popuptext {
     padding: 35px;
@@ -1099,19 +826,28 @@
     font-size: 18px;
   }
 
-  /*Testimonials*/
+  /*Reviews*/
 
-  .screenshot img {
-    width: 100%;
-    margin-top: 25px;
+  .review-mobile img {
+    width: 55%;
+    margin-left: 23%;
   }
 
-  .testimonial img {
-    width: 100%;
+  .screenshot-mobile img {
+    width: 80%;
+    margin-left: 10%;
   }
 
-  .review {
-    margin-top: 25px;
+  /*About*/
+
+  .philosophy img {
+    display: none;
+  }
+
+  .philosophy-mobile img {
+    display: block;
+    width: 80%;
+    margin: 25px auto;
   }
 }
 
@@ -1119,13 +855,11 @@
   /* desktop view */
   
   .services-list {
-    margin: 0 auto;
     left: 25%;
     top: 28.75%;
     width: 75%;
-    font-size: 18px;
-    line-height: 2em;
-    font-weight: 800;
+    font-size: 19px;
+    line-height: 1.9em;
   }
   
   .services-text-box {
@@ -1156,7 +890,6 @@
  
   .form-content {
     width: 70%;
-    /* font-size: 14px; */
     top: 10%;
     left: 15%;
   }
@@ -1191,56 +924,25 @@
 
   #title {
     max-width: 18%;
-    /* display: inline-block;
-    float: left; */
   }
 
   #first-name {
     max-width: 35%;
-    /* display: inline-block;
-    float: left; */
   }
 
   #last-name {
     max-width: 45%;
-    /* display: inline-block;
-    float: left; */
-  }
-
-  ::placeholder {
-    /* font-size: 14px; */
   }
 }
-
 
 /* Mobile Phones */
 
 @media(max-width: 640px) {
   /* landscape view */  
-
-
-  /******************************************
-  /* BASE STYLES
-  /*******************************************/
-  
-  body {
-    font-size: 16px;
-  }
   
   /******************************************
   /* LAYOUT
   /*******************************************/
-  
-  /* Header */
-  
-  header {
-    height: 150px;
-  }
-
-  header img {
-    height: 100%;
-    margin-left: 5%;
-  }
 
   /* Navigation Menu */
   
@@ -1249,7 +951,6 @@
   }
 
   .banner-title {
-    padding-top: 5%;
     font-size: 24px;
   }
 
@@ -1275,6 +976,11 @@
     padding: 4% 2% 0 2%;
   }
 
+  .second-box-mobile {
+    width: 85%;
+    padding: 30px 55px;
+  }
+
   /*Services*/
 
   .photo-box {
@@ -1283,28 +989,17 @@
     display: inline-block;
   }
 
-  /* .services-list {
-    margin: 0 auto;
-    left: 25%;
-    top: 28.75%;
-    width: 75%;
-    font-size: 18px;
-    line-height: 2em;
-    font-weight: 800;
-  } */
-
-  .text-box {
-    margin-left: -20px;
-    padding: 35px;
-    font-size: 16px;
+  .tablet-pricing img {
+    display: none;
   }
 
-  .second-box img {
-    width: 100%;
-  }
-
-  .pricing img {
-    width: 95%;
+  .mobile-pricing img {
+    display: block;
+    width: 85%;
+    margin: 15px auto;
+    background-color: rgb(247, 247, 247);
+    border-radius: 16px;
+    padding: 20px 55px;
   }
 
   .services-image {
@@ -1336,7 +1031,7 @@
   }
 
   .fine-print {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .centered-title {
@@ -1351,20 +1046,15 @@
  
   .form-container {
     width: 90%;
-    /* font-size: 12px; */
-    /* top: 10%; */
-    /* left: 10%; */
     margin-left: 5%;
     background: rgb(187, 191, 192);
     height: 1000px;
     border-radius: 8px;
-
   }
 
   .form-content {
     width: 85%;
     left: 7%;
-    /* margin-left: -2%; */
     top: 5%;
   }
 
@@ -1398,34 +1088,7 @@
 
   #title {
     max-width: 20%;
-    /* display: inline-block;
-    float: left; */
   }
-
-  #first-name {
-    /* max-width: 35%; */
-    /* display: inline-block;
-    float: left; */
-  }
-
-  #last-name {
-    /* max-width: 45%; */
-    /* display: inline-block;
-    float: left; */
-  }
-
-  #email {
-    /* width: 55%; */
-  }
-
-  #phone-number {
-    /* width: 40%; */
-  }
-
-  ::placeholder {
-    /* font-size: 12px; */
-  }
-
 
   #confirmation {
     width: 48%;
@@ -1442,86 +1105,55 @@
     margin: 35px;
     font-size: 18px;
   }
-
-  /*Testimonials*/
-
-  .screenshot img {
-    width: 100%;
-    margin-top: 25px;
-  }
-
-  .testimonial img {
-    width: 100%;
-  }
-
-  .review {
-    margin-top: 25px;
-  }
 }
-
 
 @media (max-width: 575px) {
   /* desktop view */
   
-  #pancake-services-menu {
-    margin-left: 10%;
-  }
-
-  #pancake-services-menu img {
-    /* display: block; */
-    width: 140%;
-    opacity: 0.4;
-  }
-
-  .text-box {
-    margin-left: -20px;
-    background-color: #ffcc99;
-    padding: 3%;
-    /* font-size: 16px; */
-  }
-  
-  .services-text-box {
-    font-size: 13px;
-    line-height: 1.5em;
-    height: 300px;
-  }
-
-  .services-image {
-    width: 50%;
-    float: right;
-    padding-left: 25px;
-    padding-top: 25px;
-    padding-bottom: 15px;
-  }
-
-  .services-description {
-    margin: 3% 9%;
-  }
-
-  .services-list {
-    margin: 0 auto;
-    left: 35%;
-    top: 12%;
-    width: 75%;
-    font-size: 16px;
-    line-height: 1.9em;
-    font-weight: 800;
-  }
+  /*Homepage*/
 
   .intro-message {
     width: 55%;
     height: 80%;
     margin-left: 30%;
     margin-top: 15%;
-    /* border-radius: 8px; */
-    /* padding: 2%; */
   }
 
-  /* #notebook-image img {
-    width: 100%;
-    margin-left: 0%;
-  } */
- 
+  .second-box-mobile {
+    padding: 30px 45px;
+  }
+
+  /*Services*/
+
+  #pancake-services-menu {
+    margin-left: 10%;
+  }
+
+  #pancake-services-menu img {
+    width: 140%;
+    opacity: 0.3;
+  }
+
+  .text-box {
+    background-color: #ffcc99;
+    padding: 3%;
+  }
+  
+  .services-text-box {
+    line-height: 1.5em;
+    height: 300px;
+  }
+
+  .services-list {
+    left: 35%;
+    top: 14%;
+    width: 85%;
+    font-size: 18px;
+    line-height: 1.5em;
+  }
+
+  /*Contact*/
+
   .form-container {
     height: 1250px;
     width: 75%;
@@ -1532,84 +1164,58 @@
     top: 3%;
   }
 
-  /* form hr {
-    display: none;
-  } */
-  
-  /* .form-group {
-    margin-bottom: 10px;
-  } */
-  
-  /* .form-check {
-    margin-top: 0px;
-  } */
-  
-  /* #submit {
-    margin-top: 0px;
-    margin-bottom: 5px;
-    padding: 5px 10px;
-    font-size: 14px;
-  } */
-
-  /* #submit img {
-    height: 15px;
-  }
-  
-  .asterisk {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  } */
-
   #title {
     max-width: 100%;
-    /* margin-right: 50%; */
-    /* display: block;
-    float: left; */ */
   }
 
   #first-name {
     max-width: 100%;
     margin-left: -1%;
-    /* margin-right: 40%; */
-    /* display: inline-block;
-    float: left; */
   }
 
   #last-name {
     max-width: 100%;
     margin-left: -1%;
-    /* margin-right: 40%; */
     margin-top: 15px;
     margin-bottom: 15px;
-    /* display: inline-block;
-    float: left; */
   }
 
   #email {
     max-width: 100%;
-    /* margin-right: 40%; */
   }
 
   #phone-number {
     max-width: 100%;
     margin-left: 0px;
   }
-  /* ::placeholder {
-    font-size: 12px;
-  } */
 
+  /*About*/
+  .philosophy-mobile img {
+    width: 100%;
+  }
+
+  /*Reviews*/
+  .review-mobile img {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .screenshot-mobile img {
+    width: 90%;
+    margin-left: 5%;
+  }
 }
 
 
 @media(max-width: 480px) {
   /* large portrait screens */
 
-        /******************************************
+  /******************************************
   /* BASE STYLES
   /*******************************************/
   
   body {
-    font-size: 14px;
+    font-size: 16px;
   }
   
   /******************************************
@@ -1622,26 +1228,10 @@
     height: 100px;
   }
 
-  header img {
-    height: 100%;
-    margin-left: 5%;
-  }
-
   /* Navigation Menu */
-  
-  nav {
-    font-size: 16px;
-  }
 
   .banner-title {
-    padding-top: 5%;
     font-size: 24px;
-  }
-
-  /*Footer*/
-
-  footer {
-    font-size: 16px;
   }
 
   /* Homepage */
@@ -1657,7 +1247,11 @@
     margin-left: 15%;
     margin-top: 15%;
     padding-top: 8%;
-    /* padding: 2%; */
+  }
+
+  .second-box-mobile {
+    width: 90%;
+    padding: 20px 35px;
   }
 
   /*Services*/
@@ -1666,56 +1260,16 @@
     opacity: 0.3;
   }
 
-  .photo-box {
-    margin-left: -20px;
-    position: relative;
-    display: inline-block;
-  }
-
   .services-list {
-    margin: 0 auto;
     left: 25%;
-    top: 12%;
-    width: 100%;
-    font-size: 14px;
-    line-height: 1.1em;
-    font-weight: 800;
-  }
-
-  .text-box {
-    margin-left: -20px;
-    padding: 35px;
+    top: 15%;
     font-size: 16px;
+    line-height: 1.1em;
   }
 
-  .second-box img {
-    width: 100%;
-  }
-
-  .pricing img {
-    width: 95%;
-  }
-
-  .services-image {
-    width: 50%;
-    float: right;
-    padding-left: 25px;
-    padding-top: 25px;
-    padding-bottom: 15px;
-  }
-
-  .services-description {
-    margin: 3% 9%;
-  }
-
-  .services-text ul li {
-    padding-top: 15px;
-    margin-left: 2%;
-  }
-
-  .small-title {
-    margin-right: 5px;
-    font-size: 22px;
+  .mobile-pricing img {
+    width: 85%;
+    padding: 10px 5px;
   }
 
   /*Terms of Service/Privacy Policy*/
@@ -1742,8 +1296,6 @@
     top: 2%;
   }
 
-  
-
   #confirmation {
     width: 48%;
     margin-left: 23%;
@@ -1760,50 +1312,57 @@
     font-size: 18px;
   }
 
-  /*Testimonials*/
+  /*Reviews*/
 
-  .screenshot img {
-    width: 100%;
-    margin-top: 25px;
+  .review-mobile img {
+    width: 80%;
+    margin-left: 10%;
   }
 
-  .testimonial img {
-    width: 100%;
+  .screenshot-mobile img {
+    width: 90%;
+    margin-left: 5%;
   }
 
-  .review {
-    margin-top: 25px;
+  /*Footer*/
+
+  footer {
+    margin-top: 10%;
+    padding: 15px;
   }
 
-    /*Footer*/
+  .footer-text {
+    font-size: 16px;
+    padding-left: 5%;
+  }
 
-    footer {
-        margin-top: 10%;
-        padding: 15px;
-    }
+  .copyright {
+    padding-top: 20px;
+  }
 
-    .footer-text {
-        font-size: 16px;
-        padding-left: 5%;
-    }
-
-    .copyright {
-        padding-top: 20px;
-    }
-
-    .contact-info {
-        padding-top: 15px;
-    }
+  .contact-info {
+    padding-top: 15px;
+  }
 }
 
-@media(max-width: 320px) {
-    
+@media(max-width: 442px) {
+
   .intro-message {
-    width: 80%;
-    height: 70%;
-    margin-left: 10%;
-    margin-top: 15%;
-    padding-top: 8%;
+  height: 75%;
+  line-height: 1.7em;
+  }
+
+  .second-box-mobile {
+    width: 95%;
+    padding: 20px 10px;
+    /* margin: 15px auto; */
+  }
+
+  .services-list {
+    left: 25%;
+    top: 10%;
+    width: 110%;
+    line-height: 1em;
   }
 }
 
@@ -1811,39 +1370,8 @@
   /* small portrait screens */
 
   /******************************************
-  /* BASE STYLES
-  /*******************************************/
-  
-  body {
-    /* font-size: 18px; */
-  }
-  
-  /******************************************
   /* LAYOUT
   /*******************************************/
-  
-  /* Header */
-  
-  header {
-    height: 100px;
-  }
-
-  header img {
-    height: 100%;
-    margin-left: 5%;
-  }
-
-  /* Navigation Menu */
-  
-  nav {
-    font-size: 16px;
-  }
-
-  .banner-title {
-    padding-top: 5%;
-    font-size: 24px;
-  }
-
   
   /* Homepage */
     
@@ -1852,18 +1380,19 @@
     height: 600px;
   }
 
-
-  
   .intro-message {
     width: 80%;
     height: 70%;
     margin-left: 10%;
     margin-top: 15%;
     padding-top: 8%;
-    /* border-radius: 8px; */
-    /* padding: 2%; */
   }
 
+  .second-box-mobile {
+    width: 100%;
+    padding: 5px 5px;
+    border-radius: 0px;
+  }
 
   /*Services*/
 
@@ -1871,56 +1400,12 @@
     width: 100%;
   }
 
-  .photo-box {
-    margin-left: -20px;
-    position: relative;
-    display: inline-block;
-  }
-
   .services-list {
-    margin: 0 auto;
     left: 25%;
     top: 10%;
     width: 100%;
     font-size: 14px;
     line-height: 1em;
-    font-weight: 800;
-  }
-
-  .text-box {
-    margin-left: -20px;
-    padding: 35px;
-    font-size: 16px;
-  }
-
-  .second-box img {
-    width: 100%;
-  }
-
-  .pricing img {
-    width: 95%;
-  }
-
-  .services-image {
-    width: 50%;
-    float: right;
-    padding-left: 25px;
-    padding-top: 25px;
-    padding-bottom: 15px;
-  }
-
-  .services-description {
-    margin: 3% 9%;
-  }
-
-  .services-text ul li {
-    padding-top: 15px;
-    margin-left: 2%;
-  }
-
-  .small-title {
-    margin-right: 5px;
-    font-size: 22px;
   }
 
   /*Terms of Service/Privacy Policy*/
@@ -1943,9 +1428,7 @@
     width: 90%;
     margin-left: 4%;
     margin-top: 5%;
-    /* border-radius: 25px; */
     padding: 20px 0px;
-    /* font-size: 18px; */
   }
 
   .asterisk {
@@ -1955,10 +1438,6 @@
   #submit {
     margin-top: 5px;
   }
-
-  /* #last-name {
-    margin-top: 0px;
-} */
 
   #confirmation {
     width: 48%;
@@ -1976,18 +1455,15 @@
     font-size: 18px;
   }
 
-  /*Testimonials*/
+  /*Reviews*/
 
-  .screenshot img {
-    width: 100%;
-    margin-top: 25px;
+  .review-mobile img {
+    width: 90%;
+    margin-left: 5%;
   }
 
-  .testimonial img {
-    width: 100%;
-  }
-
-  .review {
-    margin-top: 25px;
+  .screenshot-mobile img {
+    width: 90%;
+    margin-left: 5%;
   }
 }

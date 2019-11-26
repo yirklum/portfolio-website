@@ -74,7 +74,7 @@
   nav a {
      color: #000000;
      letter-spacing: 3px;
-     margin-right: 35px;
+     margin-right: 55px;
   }
 
   .banner-title {
@@ -205,6 +205,32 @@
   padding-bottom: 15px;
 }
 
+.services-image-small {
+  width: 45%;
+  float: right;
+  padding-left: 25px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.services-image-left {
+  width: 50%;
+  float: left;
+  margin-left: 20px;
+  margin-right: 35px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.services-image-left-small {
+  width: 45%;
+  float: left;
+  margin-left: 20px;
+  padding-right: 4%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
 .services-description {
   margin: 3% 9%;
 }
@@ -327,6 +353,31 @@
   margin: 3% 0;
 }
 
+#confirmation {
+  width: 60%;
+  margin: 5% auto;
+  height: 60%;
+  font-size: 20px;
+  background-color: lightgrey;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+#popuptext {
+  padding: 35px;
+}
+
+#popuptext a {
+  margin: 35px;
+  font-size: 18px;
+}
+
+.btn-success {
+  background-color: orange;
+  border: solid  1px darkgoldenrod;
+}
+
 /*Reviews*/
 
 .screenshot img {
@@ -418,7 +469,7 @@
   }
 
   #confirmation {
-    width: 48%;
+    width: 60%;
     margin-left: 23%;
     height: 60%;
     font-size: 20px;
@@ -1091,19 +1142,12 @@
   }
 
   #confirmation {
-    width: 48%;
-    margin-left: 23%;
-    height: 60%;
-    font-size: 20px;
-  }
-
-  #popuptext {
-    padding: 35px;
+    width: 70%;
+    margin-left: 15%;
   }
 
   #popuptext a {
-    margin: 35px;
-    font-size: 18px;
+    margin: 15px;
   }
 }
 
@@ -1297,19 +1341,14 @@
   }
 
   #confirmation {
-    width: 48%;
-    margin-left: 23%;
-    height: 60%;
-    font-size: 20px;
-  }
-
-  #popuptext {
-    padding: 35px;
+    width: 80%;
+    margin-left: 10%;
+    font-size: 16px;
   }
 
   #popuptext a {
-    margin: 35px;
-    font-size: 18px;
+    margin: 15px;
+    font-size: 16px;
   }
 
   /*Reviews*/
@@ -1439,21 +1478,21 @@
     margin-top: 5px;
   }
 
-  #confirmation {
+  /* #confirmation {
     width: 48%;
     margin-left: 23%;
     height: 60%;
     font-size: 20px;
-  }
+  } */
 
-  #popuptext {
+  /* #popuptext {
     padding: 35px;
-  }
+  } */
 
-  #popuptext a {
+  /* #popuptext a {
     margin: 35px;
     font-size: 18px;
-  }
+  } */
 
   /*Reviews*/
 

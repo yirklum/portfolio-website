@@ -310,6 +310,10 @@
   margin-top: 10px;
 }
 
+.form-check-label {
+  margin-right: 15px;
+}
+
 #submit {
   background-color: #1d72b8;
   margin-top: 35px;

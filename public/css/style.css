@@ -265,6 +265,10 @@
   margin: 3% 7%;
 }
 
+#development-process-mobile {
+  display: none;
+}
+
 /*Terms of Service/Privacy Policy*/
 
 .page-content {
@@ -904,6 +908,17 @@
     width: 80%;
     margin: 25px auto;
   }
+
+  /*Website Development*/
+  
+  #development-process-mobile {
+    display: block;
+  }
+
+  #development-process-mobile img {
+    width: 85%;
+    margin-left: 8%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1252,6 +1267,13 @@
     width: 90%;
     margin-left: 5%;
   }
+
+  /*Website Development*/
+
+  #development-process-mobile img {
+    width: 90%;
+    margin-left: 6%;
+  }
 }
 
 
@@ -1385,6 +1407,13 @@
 
   .contact-info {
     padding-top: 15px;
+  }
+
+  /*Website Development*/
+
+  #development-process-mobile img {
+    width: 100%;
+    margin-left: 0;
   }
 }
 

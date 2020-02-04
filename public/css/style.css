@@ -53,20 +53,49 @@
   /* Header */
   
   header {
-    height: 150px;
+    height: 160px;
+    background-color: #3c3f59;
+    padding-top: 10px;
+    padding-left: 7%;
   }
 
-  header img {
+  /* .banner-headline {
+    color: white;
+    font-size: 50px;
+    padding-top: 3%;
+    margin-left: -25px;
+    font-family: 'Special Elite', cursive; 
+  }
+   */
+
+  .banner-headline {
+    padding-top: 4%;
+    margin-right: 2%;
+    margin-left: -2%;
+  }
+
+  .banner-headline img {
+    width: 90%;
+  }
+
+  /* header img {
     height: 100%;
     margin-left: 5%;
+  } */
+
+  /* Homepage */
+
+  /* .page-background {
+    width: 100%;
   }
 
   /* Navigation Menu */
   
   nav {
-    font-size: 22px;
+    font-size: 20px;
     background: #ffcc99;
-    font-family: 'Sorts Mill Goudy', serif;
+    /* background: grey; */
+    font-family: 'Special Elite', cursive; 
     border-top: solid 2px orange;
     border-bottom: solid 2px orange;
   }
@@ -83,6 +112,54 @@
     font-family: 'Sorts Mill Goudy', serif;
     font-size: 36px;
   }
+
+  /*Storyworld*/
+  
+  .storyworld {
+    background-image: url("../graphics/clouds.png");
+    background-size: cover;
+    background-repeat: repeat;
+  }
+
+  .nav-box img {
+    width: 80%;
+    margin-left: 7%;
+  }
+
+  /*Locations*/
+
+  .location-box {
+    position: relative;
+  }
+
+  .location {
+    width: 40%;
+    margin-bottom: 5%;
+    margin-left: 7%;
+    float: left;
+  }
+
+  /* .location-title {
+    position: absolute;
+    left: 55%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 5px 10px;
+    font-size: 20px;
+  } */
+
+  /* #virginia {
+    left: 8%;
+  }
+
+  #washington {
+    left: 55%;
+  }
+
+  #hongkong {
+    left: 8%;
+    top: 200px;
+  } */
 
   /*Footer*/
 
@@ -101,27 +178,27 @@
 /* Homepage */
   
 .intro {
-  background-image: url("../images/webpage-background.png");
+  background-image: url("../graphics/writing-website-homepage.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 950px;
   border-bottom: solid 2px orange;
   margin: 0;
   position: relative;
 }
 
 .intro-message {
-  background: white;
+  /* background: white; */
   position: absolute;
   opacity: 0.925;
-  width: 50%;
+  width: 33%;
   height: 60%;
-  margin-left: 40%;
-  margin-top: 9%;
+  margin-left: 35%;
+  margin-top: 20%;
   text-align: center;
   text-overflow: hidden;
-  border-radius: 8px;
-  border: solid 2px #ffcc99;
+  /* border-radius: 8px;
+  border: solid 2px #ffcc99; */
   padding: 3%;
   line-height: 1.8em;
 }
@@ -136,9 +213,9 @@
 
 /*Services*/
 
-#pancake-services-menu img {
+/* #pancake-services-menu img {
   width: 100%;
-}
+} */
 
 .photo-box {
   margin-left: -20px;
@@ -146,7 +223,7 @@
   display: inline-block;
 }
 
-.services-list {
+/* .services-list {
   position: absolute;
   z-index: 999;
   margin: 0 auto;
@@ -163,7 +240,7 @@
 
 .services-list a {
   color: black;
-}
+} */
 
 .text-box {
   margin-left: -20px;
@@ -184,7 +261,7 @@
   width: 100%;
 }
 
-.pricing img {
+/* .pricing img {
   width: 95%;
   margin-left: 2%;
 }
@@ -195,7 +272,7 @@
 
 .mobile-pricing img {
   display: none;
-}
+} */
 
 .services-image {
   width: 50%;
@@ -288,26 +365,54 @@
 
 /*Contact*/
 
+.contact-page {
+  background-image: url("../graphics/airmail-wallpaper.png");
+  background-size: cover;
+  font-family: 'Special Elite', cursive; 
+}
+
+.contact-banner {
+  background-color: rgba(255,255,255,0.9);
+  text-align: center;  
+  font-size: 30px;
+  width: 20%;
+  margin-left: 38%;
+}
+
+.contact-text {
+  background-color: rgba(255,255,255,0.9);
+  width: 65%;
+  margin-left: 17%;
+  padding: 15px;
+}
+
+.hidden {
+  display: hidden;
+  height: 35px;
+}
+
 .form-container {
   position: relative;
 }
 
-#notebook-image img {
+#typewriter-image img {
   width: 75%;
-  margin-left: 14%;
+  margin-left: 11%;
 }
 
 .form-content {
-  width: 50%;
+  width: 40%;
   font-size: 18px;
   z-index: 999;
   position: absolute;
-  top: 15%;
-  left: 25%;
+  margin-left: 4%;
+  margin-top: -6%;
+  /* top: 15%; */
+  /* left: 35%; */
 }
 
 .form-group {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .form-check {
@@ -319,36 +424,38 @@
 }
 
 #submit {
-  background-color: #1d72b8;
-  margin-top: 35px;
-  margin-bottom: 25px;
-  padding: 8px 15px;
+  background-color: #1d2868;
+  margin-top: 5px;
+  /* margin-bottom: 25px; */
+  padding: 6px 10px;
   color: #ffffff;
   font-size: 20px;
+  /* margin-left: 25%; */
 }
 
 #submit img {
   margin-left: 10px;
-  height: 35px;
+  height: 25px;
 }
 
 .asterisk {
   display: block;
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 15px;
+  font-size: 16px;
+  /* margin-bottom: 25px; */
 }
 
-#name-label {
+/* #name-label {
   margin-left: -1%;
   margin-bottom: 5px;
 }
 
 #title {
   margin-left: -1%;
-}
+} */
 
-#phone-number {
-  margin-left: 5%;
+#location {
+  margin-left: 2%;
 }
 
 .contact-title {
@@ -388,7 +495,7 @@
 
 /*Reviews*/
 
-.screenshot img {
+/* .screenshot img {
   width: 100%;
   margin-top: 25px;
 }
@@ -403,26 +510,51 @@
 
 .review-block-mobile {
   display: none;
-}
+} */
 
 /*About*/
 
 .about-image {
-  width: 50%;
+  width: 30%;
   float: right;
   padding-left: 25px;
   padding-top: 8px;
   padding-bottom: 15px;
 }
 
-.philosophy img {
-  width: 100%;
-  margin-top: 25px;
+
+/*Books*/
+
+.books-page {
+  background-color: #000000;
+  color: #ffffff;
 }
 
-.philosophy-mobile img {
-  display: none;
+.books-block {
+  width: 50%;
+  height: 1000px;
+  background-color: #ffffff;
+  margin-left: 4%;
+  margin-right: 2%;
+  margin-top: 3%;
+  margin-bottom: 4%;
 }
+
+.books-footer {
+  color: #000000;
+}
+
+.books-image {
+  height: 250px;
+}
+
+/*Blog*/
+
+.blog-title img {
+  width: 100%;
+}
+
+
 
 /*Smaller Screen Sizes*/
 

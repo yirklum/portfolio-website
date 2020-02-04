@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+
 
         <!-- <script src="javascript/index.js"></script>
         <script src="javascript/contact.js" async defer></script>
@@ -20,7 +22,19 @@
     <body>
         <div class="wrapper">
             <header>
-                <img src="graphics/fsm-pancake-logo.png">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="graphics/book-pile.png" height="125px">
+                    </div>
+
+                    <div class="col-md-6 banner-headline">
+                        <img src="graphics/christina-headline.png">
+                    </div>
+
+                    <div class="col-sm-3">
+                        <img src="graphics/red-typewriter.png" height="140px">
+                    </div>
+                </div>
             </header>
 
             <nav class="navbar navbar-expand-md navbar-light">                    
@@ -39,12 +53,16 @@
                         </li>
                             
                         <li class="nav-item" >
-                            <a class="nav-link font-weight-bold px-3" href="services.html">Services</a>
+                            <a class="nav-link font-weight-bold px-3" href="books.html">Books</a>
                         </li>
                             
-                        <!-- <li class="nav-item">
-                            <a class="nav-link font-weight-bold px-3" href="client-reviews.html">Reviews</a>
-                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold px-3" href="storyworld.html">Storyworld</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link font-weight-bold px-3" href="blog.html">Blog</a>
+                        </li>
                             
                         <li class="nav-item">
                             <a class="nav-link font-weight-bold px-3" href="contact.html">Contact</a>
@@ -53,21 +71,23 @@
                 </div>
             </nav>
 
-            <div class="banner-title">Send Us A Note!</div>
+            <div class="contact-page">
+
+            <div class="hidden"></div>
+
+            <p class="contact-banner">Write Us A Note!</p>
                 
-            <p class="services-description">
-                Ready to take the next step? Let's talk! You can send us a message at info@fullstackmediacompany 
-                or fill out the contact form below. Tell us a little about yourself and your goals. We'll get 
-                back to you as soon as possible.
+            <p class="contact-text">
+                Questions? Comments? We would love to hear from you! You can fill out the form below or send us a message at christina.rust@gmail.com.
             </p>  
                 
-            <form class="contact-form" name="contact" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdtcO8k3yH4LLjdNzLWCn4Rr5ULz_Mn3KXkNqwJEjAPySiLRQ/formResponse" onsubmit="return validateForm()" method="post" target="no-target">
+            <form class="contact-form" name="contact" action="" onsubmit="return validateForm()" method="post" target="no-target">
         
                 <iframe src="#" id="no-target" name="no-target" style="display:none"></iframe>
                     
                 <div class="form-container">
-                    <div id="notebook-image">
-                        <img src="graphics/air-mail-notebook.png">
+                    <div id="typewriter-image">
+                        <img src="graphics/typewriter-page.png">
                     </div>
 
                     <div class="form-content">
@@ -85,81 +105,38 @@
                             </div>
                                 
                             <div class="col-md-4" id="first-name">
-                                <input type="text" id="firstName" name="entry.831988402" class="form-control" placeholder="First name *">
+                                <input type="text" id="firstName" name="entry." class="form-control" placeholder="First name *">
                             </div>
                                     
                             <div class="col-md-6" id="last-name">
-                                <input type="text" id="lastName" class="form-control" name="entry.58214077" placeholder="Last name *">
+                                <input type="text" id="lastName" class="form-control" name="entry." placeholder="Last name *">
                             </div>
                         </div>
 
                         <div class="form-row">
                             <div class="form-group" id="email">
                                 <label for="email">Email Address: *</label>
-                                <input type="email" id="eMail" class="form-control" name="entry.9186359" placeholder="">
+                                <input type="email" id="eMail" class="form-control" name="entry." placeholder="">
                                 <small id="email-disclaimer" class="form-text text-muted">We'll never sell your personal information.</small>
                             </div>
                 
-                            <div class="form-group" id="phone-number">
-                                <label for="phone-number">Telephone Number:</label>
-                                <input type="text" class="form-control" name="entry.1687864446" placeholder="">
-                            </div>
+                            <!-- <div class="form-group" id="location">
+                                <label for="location">Location:</label>
+                                <input type="text" class="form-control" name="entry." placeholder="City, State, Country">
+                            </div> -->
                         </div>
 
-                        <div class="form-group form-row" id="location">
-                            <label for="phone-number">Location:</label>
-                            <input type="text" class="form-control" name="entry.387605823" placeholder="City, State, Country">
-                        </div>
-            
-                        <hr>
-
-                        <div class="form-group">
-                            <label for="services">What type of services are you interested in?</label>
-                        
-                            <div>                         
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="website-development" name="entry.345953024" value="Website Development">
-                                    <label class="form-check-label" for="website-development">Website Development</label>
-                                </div>
-            
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="graphic-design" name="entry.345953024" value="Graphic Design">
-                                    <label class="form-check-label" for="graphic-design">Graphic Design</label>
-                                </div>
-
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="branding-and-promotion" name="entry.345953024" value="Branding & Promotion">
-                                    <label class="form-check-label" for="branding-and-promotion">Branding & Promotion</label>
-                                </div>
-
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="content-writing" name="entry.345953024" value="Content Writing">
-                                    <label class="form-check-label" for="content-writing">Content Writing</label>
-                                </div>
-
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="checkbox" id="multimedia-production" name="entry.345953024" value="Multimedia Production">
-                                    <label class="form-check-label" for="multimedia-production">Multimedia Production</label>
-                                </div>
-                            </div> 
-                        </div>
-
-                        <hr>
+                        <!-- <hr> -->
             
                         <div class="form-group">
-                            <label for="description">Please provide a brief description of your request. *</label>
-                            <textarea class="form-control" id="jobDescription" name="entry.362771837" rows="3" placeholder="How can we help you?"></textarea>
-                        </div>
-            
-                        <div class="form-group">
-                            <label for="date">Date Needed:</label>
-                            <input type="text" class="form-control" id="date" name="entry.889479998" placeholder="What is your time frame?">
+                            <label for="description">Tell us what's on your mind! *</label>
+                            <textarea class="form-control" id="jobDescription" name="entry." rows="3" placeholder="What's up?"></textarea>
                         </div>
 
-                        <hr>
+                        <!-- <hr> -->
 
                         <div class="form-group">
-                            <label for="updates">Would you like to receive e-mails from Full Stack Media with news and special offers?</label>
+                            <label for="updates">Would you like to receive e-mail updates about books and special offers?</label>
                             
                             <div class="form-check-inline">
                                 <input class="form-check-input" type="radio" name="entry.762502550" id="yes" value="Yes!">
@@ -170,7 +147,7 @@
                             </div>
                         </div>    
 
-                        <hr>
+                        <!-- <hr> -->
     
                         <button type="submit" id="submit" class="btn btn">
                             Submit
@@ -194,6 +171,7 @@
                     </div>
                 </div>
             </div>
+        
     
             <footer class="clear">
                 <div class="footer-text">
@@ -201,11 +179,11 @@
                         <div class="col-md-4 contact-info">
                             Contact Us:
                             <br>
-                            info@fullstackmediacompany.com
+                            <!-- info@fullstackmediacompany.com -->
                         </div>
             
                         <div class="col-md-3 copyright">
-                            &copy;2018 Full Stack Media
+                            <!-- &copy;2018 Full Stack Media -->
                         </div>
                         
                         <div class="col-md-5">
@@ -215,6 +193,7 @@
                     </div>
                 </div>
             </footer>
+        </div>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="   crossorigin="anonymous"></script>
